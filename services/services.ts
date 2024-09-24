@@ -1,4 +1,5 @@
 // import { createMutation } from 'react-query-kit';
+import api from '@/lib/axios-instance';
 import { useQuery } from '@tanstack/react-query';
 import { FetchService } from './api-sdk/lib/utils/fetch';
 import { ApiError } from './api-sdk/errors';
@@ -11,7 +12,7 @@ export class Service {
   }
 
 
-  // fetchService: FetchService = new FetchService({
+  // fetchService: FetchService = new FetchService({exportexport
   //   requestInterceptor: async (config) => ({
   //     ...config,
   //     headers: {
@@ -28,7 +29,7 @@ export class Service {
   // useGet = () =>
   //   useQuery({
   //     queryKey: ['/type'],
-  //     queryFn: () => api.get(`/type-office`),
+  //     queryFn: () => api.get(`/office-types`),
   //   });
 
     useGet = (queryKey: [string]) => {
@@ -54,3 +55,5 @@ export class Service {
   //   mutationFn: (data: any) => api.post('/register', data),
   // });
 }
+
+
